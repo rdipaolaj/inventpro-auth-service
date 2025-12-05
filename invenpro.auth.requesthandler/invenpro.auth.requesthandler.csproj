@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\invenpro.auth.application\invenpro.auth.application.csproj" />
+    <ProjectReference Include="..\invenpro.auth.request\invenpro.auth.request.csproj" />
+    <ProjectReference Include="..\invenpro.auth.services\invenpro.auth.services.csproj" />
+  </ItemGroup>
+
+</Project>

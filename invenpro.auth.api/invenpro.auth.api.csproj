@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="FluentValidation" Version="12.1.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.14.0" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.14.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.14.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.14.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.14.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\invenpro.auth.common\invenpro.auth.common.csproj" />
+    <ProjectReference Include="..\invenpro.auth.encryption\invenpro.auth.encryption.csproj" />
+    <ProjectReference Include="..\invenpro.auth.infraestructure\invenpro.auth.infraestructure.csproj" />
+    <ProjectReference Include="..\invenpro.auth.repository\invenpro.auth.repository.csproj" />
+    <ProjectReference Include="..\invenpro.auth.request\invenpro.auth.request.csproj" />
+  </ItemGroup>
+
+</Project>

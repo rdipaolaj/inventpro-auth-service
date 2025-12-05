@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\invenpro.auth.common\invenpro.auth.common.csproj" />
+    <ProjectReference Include="..\invenpro.auth.domain\invenpro.auth.domain.csproj" />
+    <ProjectReference Include="..\invenpro.auth.dto\invenpro.auth.dto.csproj" />
+    <ProjectReference Include="..\invenpro.auth.redis\invenpro.auth.redis.csproj" />
+    <ProjectReference Include="..\invenpro.auth.repository\invenpro.auth.repository.csproj" />
+    <ProjectReference Include="..\invenpro.auth.services\invenpro.auth.services.csproj" />
+  </ItemGroup>
+
+</Project>

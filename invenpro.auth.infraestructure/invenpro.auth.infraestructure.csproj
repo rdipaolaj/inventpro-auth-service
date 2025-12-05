@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.0" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Scrutor" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\invenpro.auth.application\invenpro.auth.application.csproj" />
+    <ProjectReference Include="..\invenpro.auth.common\invenpro.auth.common.csproj" />
+    <ProjectReference Include="..\invenpro.auth.encryption\invenpro.auth.encryption.csproj" />
+    <ProjectReference Include="..\invenpro.auth.redis\invenpro.auth.redis.csproj" />
+    <ProjectReference Include="..\invenpro.auth.repository\invenpro.auth.repository.csproj" />
+    <ProjectReference Include="..\invenpro.auth.requesthandler\invenpro.auth.requesthandler.csproj" />
+    <ProjectReference Include="..\invenpro.auth.requestvalidator\invenpro.auth.requestvalidator.csproj" />
+    <ProjectReference Include="..\invenpro.auth.secretmanager\invenpro.auth.secretmanager.csproj" />
+    <ProjectReference Include="..\invenpro.auth.services\invenpro.auth.services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PostProcessors\" />
+  </ItemGroup>
+
+</Project>
